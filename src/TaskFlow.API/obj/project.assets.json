@@ -36,6 +36,58 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/10.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "TaskFlow.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TaskFlow.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TaskFlow.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskFlow.Application.dll": {}
+        }
+      },
+      "TaskFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        }
+      },
+      "TaskFlow.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TaskFlow.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TaskFlow.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskFlow.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -75,11 +127,50 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/10.2.1": {
+      "sha512": "vzB8ZAGqXus3fdareJ9GHctaRP9ZL+wW9x8U7s1Y+BWprInFvSg6rpD9VhANNpwXA8fUHqu5Agjl/+hHG1BCQA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swaggerui.10.2.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    },
+    "TaskFlow.Application/1.0.0": {
+      "type": "project",
+      "path": "../TaskFlow.Application/TaskFlow.Application.csproj",
+      "msbuildProject": "../TaskFlow.Application/TaskFlow.Application.csproj"
+    },
+    "TaskFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TaskFlow.Domain/TaskFlow.Domain.csproj",
+      "msbuildProject": "../TaskFlow.Domain/TaskFlow.Domain.csproj"
+    },
+    "TaskFlow.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TaskFlow.Infrastructure/TaskFlow.Infrastructure.csproj",
+      "msbuildProject": "../TaskFlow.Infrastructure/TaskFlow.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.8"
+      "Microsoft.AspNetCore.OpenApi >= 10.0.8",
+      "Swashbuckle.AspNetCore.SwaggerUI >= 10.2.1",
+      "TaskFlow.Application >= 1.0.0",
+      "TaskFlow.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -89,11 +180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\TaskFlow.API.csproj",
+      "projectUniqueName": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\TaskFlow.API.csproj",
       "projectName": "TaskFlow.API",
-      "projectPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\TaskFlow.API.csproj",
+      "projectPath": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\TaskFlow.API.csproj",
       "packagesPath": "C:\\Users\\jose.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\obj\\",
+      "outputPath": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,7 +205,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Application\\TaskFlow.Application.csproj": {
+              "projectPath": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Application\\TaskFlow.Application.csproj"
+            },
+            "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Infrastructure\\TaskFlow.Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Infrastructure\\TaskFlow.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -136,6 +234,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[10.0.8, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerUI": {
+            "target": "Package",
+            "version": "[10.2.1, )"
           }
         },
         "imports": [

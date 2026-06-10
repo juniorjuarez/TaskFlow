@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
       "projectName": "TaskFlow.Domain",
-      "projectPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+      "projectPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
       "packagesPath": "C:\\Users\\jose.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\TaskFlow.Domain\\obj\\",
+      "outputPath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

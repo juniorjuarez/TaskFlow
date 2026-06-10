@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TaEaZ7vQAnM=",
+  "dgSpecHash": "ewcwMT7qXXo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+  "projectFilePath": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
