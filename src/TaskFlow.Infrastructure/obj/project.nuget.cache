@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p5vWMRniT9E=",
+  "dgSpecHash": "c6adIANX1sQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\TaskFlow.Infrastructure\\TaskFlow.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\projetos\\TaskFlow\\src\\TaskFlow.Infrastructure\\TaskFlow.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
